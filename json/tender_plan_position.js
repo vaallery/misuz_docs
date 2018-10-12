@@ -8,7 +8,7 @@ export default {
   // Особая закупка ПГ всегда содержит ссылку на один, либо несколько Особых закупок по КВР
   // SpecialPosition - Особая закупка по КВР (Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveSpendingDocument)
   // Данные копируются либо переносятся по алгоритму в модели:
-  // - Purchase (общие атрибуты берутся у Куратора и при смене куратора должны обновиться)
+  // - Purchase (общие атрибуты берутся только у Куратора и при смене куратора должны обновиться)
   // - CustomerRequirement, если атрибут уникален для каждой организации...
   id: "Идентификатор Закупки ПГ в старой базе",
   purchase_code: "Идентификационный код закупки" +
@@ -44,24 +44,35 @@ export default {
     "string" +
     "old - Position.document_kind[:code]" +
     "new - Purchase.object_info" ,
-  undefined: false,
-  is_joint_bidding_purchase: true,
+  undefined: "Невозможно определить объём подлежащих выполнению работ по техническому обслуживанию и (или) ремонту техники, оборудования, оказанию услуг связи, общественного питания, переводчика, проведения оценки, перевозки грузов, пассажиров и багажа, юридических, медицинских, образовательных, гостиничных услуг" +
+    "bool" +
+    "Кроме особых" +
+    "old - Position.impossibly_determination_amount" +
+    "new - CustomerRequirement.undefined" ,
+  is_joint_bidding_purchase: "Совместные торги" +
+    "bool" +
+    "Аукционы, Конкурсы" +
+    "old - Position.impossibly_determination_amount" +
+    "new - Purchase.is_joint_bidding_purchase",
   joint_bidding_organization: {
     // Организация-Организатор совместной закупки (не путать с Организацией-Куратором совместной закупки)
     // Структура в соответствии с nsiOrganization
   },
   max_price: "Начальная (максимальная) цена контракта" +
     "money в копейках" +
-    "old - title" +
-    "new - max_price" +
+    "old - Position.total" +
+    "old - SpecialPosition.total" +
+    "new - CustomerRequirement.max_price" +
     "example - 23500",
 
   InitialAmount: {
-    total: 5000,
-    currentYear: 3000,
-    firstYear: 1000,
-    secondYear: 500,
-    subsecYears: 500
+    // Транслируем из Закупки ПГ и не сохраняем
+    // Данные приведены для особой закупки, для обычной возможно наименования будут немного отличаться
+    total:       'SpecialPosition.total',
+    currentYear: 'SpecialPosition.total_amount_current_year',
+    firstYear:   'SpecialPosition.total_amount_first_year',
+    secondYear:  'SpecialPosition.total_amount_second_year',
+    subsecYears: 'SpecialPosition.total_amount_other_years'
   },
   InitialAmountMethods: {
     method: "",
