@@ -6,6 +6,12 @@ export default {
       // Если закупка несовместная, то секцию не заполняем
       // Данные в данной секции на фронте не отображаются, не редактируются, а необходимы только для сравнения
     },
+    it_purchase: "Закупка в области информационных и телекоммуникационных технологий" +
+      "bool" +
+      "Для обычной закупки берем у заказчика из Закупки ПГ только в первый раз и далее атрибут редактироуется только в заявке" +
+      "Для особой значение по умолчанию - false" +
+      "old - Position.it_purchase" +
+      "new - Purchase.it_purchase" ,
 
 
     max_price: 2000000,
@@ -81,40 +87,9 @@ export default {
         'Структура в соответствии с Employee',
     },
     TenderPlanPosition: {
-      placing_way: {
-        placingWayId: "8360978",
-        code: "ZK44",
-        name: "Название"
-      },
-      purchase_code: "183165531719116550100100030006820244",
-      object_type: 'Тип объекта закупки',
-      object_info: "Аренда нежилых помещений",
-      undefined: false,
-      is_joint_bidding_purchase: true,
-      joint_bidding_organization:{
-        id: 2345,
-        info: 'info'
-      },
-      max_price: 354,
-      InitialAmount: {
-        total: 5000,
-        currentYear: 3000,
-        firstYear: 1000,
-        secondYear: 500,
-        subsecYears: 500
-      },
-      InitialAmountMethods: {
-        method: "",
-      },
-      application_guarantee: {
-        amount: 34
-      },
-      contract_guarantee: {
-        amount: 234,
-        return_condition: "",
-        return_term: {},
-      },
-      preferences: [],
+      // Транслируем атрибуты Закупки ПГ из старой базы, куратора совместной закупки
+      // Если закупка несовместная, то секцию не заполняем
+      // Данные в данной секции на фронте не отображаются, не редактируются, а необходимы только для сравнения
     },
     amount_kbks:[{kbk: "842 0113 9905930 244 225 225003 101 00000", amount: 215, kbk_type:'Федеральный бюджет'}],
     stages: [],
