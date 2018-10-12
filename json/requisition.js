@@ -5,16 +5,6 @@ export default {
       // Транслируем атрибуты Закупки ПГ из старой базы, куратора совместной закупки
       // Если закупка несовместная, то секцию не заполняем
       // Данные в данной секции на фронте не отображаются, не редактируются, а необходимы только для сравнения
-      id: "Идентификатор Закупки ПГ в старой базе",
-      placing_way: "В соответствии со структурой элемента nsiPlacingWay " +
-        "",
-
-      object_info: "Аренда нежилых помещений",
-      undefined: false,
-      is_joint_bidding_purchase: true,
-      joint_bidding_organization_id: 2345,
-      it_purchase: true,
-      preferences: "Массив требований ограничений и преимуществ",
     },
 
 
@@ -59,56 +49,38 @@ export default {
     ],
   },
   customerRequirement: {
+    // Модель СustomerRequirement
     id: 12,
-    maxPrice: 234,
-    purchase_base: "",
-    price_options: [],
-    stage_type: "Абсолютные даты",
-    stage_begin_from_contract_date: "с даты заключения контракта",
+    purchase_base: "Основание для закупки" +
+      "Текстовое поле, по умолчанию '' ",
+    stage_type: "Тип дат, используемых при определении сроков" +
+      "Текстовое поле, по умолчанию '' ",
+    stage_begin_from_contract_date: "Начало исчисления срока" +
+      "Текстовое поле, по умолчанию '' ",
     stage_term_option: "working_days",
     consignee: "",
     stage_add_info: "",
     periodicity: "",
     customer_info: {
-      customer_id: 1,
-      responsible_employee: {
-        id: 111,
-        "email": "e.muratova@tatar.ru",
-        "phone": "8(843)222-09-28",
-        "last_name": "Муратова",
-        "first_name": "Евгения",
-        "middle_name": "Сергеевна",
-        "position": "начальник отдела бухучёта"
-      },
-      contract_employee: {
-        id: 111,
-        "email": "e.muratova@tatar.ru",
-        "phone": "8(843)222-09-28",
-        "last_name": "Муратова",
-        "first_name": "Евгения",
-        "middle_name": "Сергеевна",
-        "position": "начальник отдела бухучёта"
-      },
-      signatory_employee: {
-        id: 111,
-        "email": "e.muratova@tatar.ru",
-        "phone": "8(843)222-09-28",
-        "last_name": "Муратова",
-        "first_name": "Евгения",
-        "middle_name": "Сергеевна",
-        "position": "начальник отдела бухучёта"
-      },
-      plenipotentiary_employee: {
-        id: 111,
-        "email": "e.muratova@tatar.ru",
-        "phone": "8(843)222-09-28",
-        "last_name": "Муратова",
-        "first_name": "Евгения",
-        "middle_name": "Сергеевна",
-        "position": "начальник отдела бухучёта"
-      },
+      customer: "Организация-Заказчик" +
+        "Структура в соответствии с nsiOrganization" +
+        "в модели храниться как customer_id",
+      responsible_employee: 'Ответственный исполнитель.' +
+        'Структура в соответствии с Employee' +
+        'responsible_employee_id',
+      contract_employee: 'Контрактный управляющий/ответственный контрактной службы' +
+        'Структура в соответствии с Employee' +
+        'contract_employee_id',
+      executive_employee: 'Отвественное должностное лицо' +
+        'Структура в соответствии с Employee' +
+        'executive_employee_id',
+      signatory_employee: 'Лицо, подписывающее контракт' +
+        'Структура в соответствии с Employee' +
+        'signatory_employee_id',
+      plenipotentiary_employee: 'Полномочный представитель в составе Единой комиссии' +
+        'Структура в соответствии с Employee',
     },
-    position: {
+    TenderPlanPosition: {
       placing_way: {
         placingWayId: "8360978",
         code: "ZK44",
