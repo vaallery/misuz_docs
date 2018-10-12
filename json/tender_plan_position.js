@@ -22,23 +22,6 @@ export default {
     "old - Position.purchase_type == nsiPlacingWay.name? " +
     "old - для особых - всегда EP44" +
     "new - Purchase.placing_way_id соответствующий nsiPlacingWay.placingWayId ?",
-  is_special: "Особая закупка" +
-    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveDocument - Особая"+
-    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveSpendingDocument - вложенная"+
-    "bool" +
-    "new - Purchase.is_special" +
-    "У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44",
-  contract_single_customer_reason: {
-    // У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44 и is_special == false
-    // Основание заключения контракта с единственным поставщиком (подрядчиком, исполнителем)
-    // ref nsiContractSingleCustomerReason
-  },
-  special_purchase_type: 'Тип особой закупки' +
-    'У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44 и is_special == true' +
-    'ref nsiSpecialPurchase' +
-    "SpecialPurchase.document_kind[:code] == nsiSpecialPurchase[:code]" +
-    "old - SpecialPurchase.document_kind[:code]" +
-    "new - special_purchase_type_id" +,
   object_info: "Наименование объекта закупки" +
     'только для обычных закупок, поскольку у особых этот атрибут в ПГ отсутствует и редактируется на этапе заявки' +
     "string" +
@@ -49,15 +32,12 @@ export default {
     "Кроме особых" +
     "old - Position.impossibly_determination_amount" +
     "new - CustomerRequirement.undefined" ,
-  is_joint_bidding_purchase: "Совместные торги" +
-    "bool" +
-    "Аукционы, Конкурсы" +
-    "old - Position.impossibly_determination_amount" +
-    "new - Purchase.is_joint_bidding_purchase",
+
   joint_bidding_organization: {
     // Организация-Организатор совместной закупки (не путать с Организацией-Куратором совместной закупки)
     // Структура в соответствии с nsiOrganization
   },
+
   max_price: "Начальная (максимальная) цена контракта" +
     "money в копейках" +
     "old - Position.total" +
@@ -74,16 +54,17 @@ export default {
     secondYear:  'SpecialPosition.total_amount_second_year',
     subsecYears: 'SpecialPosition.total_amount_other_years'
   },
+
   InitialAmountMethods: {
-    method: "",
+    // для особой храним в таблице initial_amount_methods. Связь CustomerRequirement has_many: InitialAmountMethods
+    // для обычных транслируем из Закупки ПГ
+    // Position.initial_amount_methods.each do |iam|
+    is_custom: 'iam.initial_amount_method_type == "Метод определения и обоснования НМЦК не предусмотрен ч.1 ст.22 44-ФЗ"',
+    type: 'is_custom ? "" : iam.initial_amount_method_type ',
+    name: 'iam.initial_amount_method_name',
+    inability_foundation: 'iam.initial_amount_method_inability_foundation',
+    justification: 'iam.initial_amount_method_justification',
   },
-  application_guarantee: {
-    amount: 34
-  },
-  contract_guarantee: {
-    amount: 234,
-    return_condition: "",
-    return_term: {},
-  },
+
   preferences: [],
 }

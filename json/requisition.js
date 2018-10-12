@@ -6,12 +6,52 @@ export default {
       // Если закупка несовместная, то секцию не заполняем
       // Данные в данной секции на фронте не отображаются, не редактируются, а необходимы только для сравнения
     },
+    placing_way: "Способ определения поставщика (подрядчика, исполнителя)" +
+      "для совместных сохраняется после согласования заявки",
+
+    is_special: "Особая закупка" +
+      "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveDocument - Особая"+
+      "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveSpendingDocument - вложенная"+
+      "bool" +
+      "new - Purchase.is_special" +
+      "У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44",
+    contract_single_customer_reason: {
+      // У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44 и is_special == false
+      // Основание заключения контракта с единственным поставщиком (подрядчиком, исполнителем)
+      // ref nsiContractSingleCustomerReason
+    },
+    special_purchase_type: 'Тип особой закупки' +
+      'У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44 и is_special == true' +
+      'ref nsiSpecialPurchase' +
+      "SpecialPurchase.document_kind[:code] == nsiSpecialPurchase[:code]" +
+      "old - SpecialPurchase.document_kind[:code]" +
+      "new - Purchase.special_purchase_type_id",
+
+    object_info: "Наименование объекта закупки" +
+      "для совместных сохраняется после согласования заявки" +
+      'только для обычных закупок не редактируемое поле' +
+      "string" +
+      "old - Position.document_kind[:code]" +
+      "new - Purchase.object_info" ,
+
     it_purchase: "Закупка в области информационных и телекоммуникационных технологий" +
       "bool" +
       "Для обычной закупки берем у заказчика из Закупки ПГ только в первый раз и далее атрибут редактироуется только в заявке" +
       "Для особой значение по умолчанию - false" +
       "old - Position.it_purchase" +
       "new - Purchase.it_purchase",
+
+    is_joint_bidding_purchase: "Совместные торги" +
+      "bool" +
+      "Аукционы, Конкурсы" +
+      "old - Position.impossibly_determination_amount" +
+      "new - Purchase.is_joint_bidding_purchase",
+
+    joint_bidding_organization: {
+      // Организация-Организатор совместной закупки (не путать с Организацией-Куратором совместной закупки)
+      // Структура в соответствии с nsiOrganization
+      // сохраняется после согласования заявки
+    },
 
     joint_bidding_curator: {
       // Организация-Куратор совместной закупки в урезанном формате nsiOrganization
@@ -22,7 +62,11 @@ export default {
       "вычислаемое поле = Purchase.CustomerRequirements.sum(&max_price)",
 
     products: [],
-    preferencesAdd: [],
+    preferencesAdd: [
+      // по умолчанию - пустой массив
+      // добавление возможно только для обычных закупок
+      // Purchase has_many preferences
+    ],
     initialAmountMethods: [
       {
         type: "",
@@ -64,9 +108,8 @@ export default {
     // Модель СustomerRequirement
     id: 12,
     tenderPlanPosition: {
-      // Транслируем атрибуты Закупки ПГ из старой базы, куратора совместной закупки
-      // Если закупка несовместная, то секцию не заполняем
-      // Данные в данной секции на фронте не отображаются, не редактируются, а необходимы только для сравнения
+      // Транслируем атрибуты Закупки ПГ из старой базы, текущей Организации-Заказчика
+      // Данные в данной секции на фронте отображаются, не редактируются, для совместных закупок проверяется идентичность атрибутов
     },
     customer_info: {
       customer: "Организация-Заказчик" +
@@ -88,6 +131,36 @@ export default {
         'Структура в соответствии с Employee',
     },
 
+    application_guarantee: {
+      // Обеспечение заявки
+      // Переносим из закупки ПГ и храним в таблице guarantees. Доступ к значению через CustomerRequirement.application_guarantee_id
+      // с заполнением значений по умолчанию
+      amount: "Обеспечение заявки" +
+        "money" +
+        "Position.contract_security.contract_security_rubles",
+      procedureInfo: '',
+      settlementAccount:	'40302810700025000795',
+      personalAccount:	'ЛР718010011-ДирКП',
+      bik:	'49205805'
+    },
+
+    contract_guarantee: {
+      // Обеспечение исполнения контракта
+      // Переносим из закупки ПГ и храним в таблице guarantees. Доступ к значению через CustomerRequirement.contract_guarantee_id
+      // с заполнением значений по умолчанию
+      amount: "Обеспечение исполнения контракта" +
+        "money" +
+        "Position.contract_security.contract_security_rubles",
+      procedureInfo: '',
+      settlementAccount:	'40302810700025000795',
+      personalAccount:	'ЛР718010011-ДирКП',
+      bik:	'49205805',
+      return_condition: "",
+      return_term: {
+        // начальные значения - пустые
+        number: 'integer', option: 'string'
+      },
+    },
 
     purchase_base: "Основание для закупки" +
       "Текстовое поле, по умолчанию '' ",
