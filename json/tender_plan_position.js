@@ -11,17 +11,16 @@ export default {
   // - Purchase (общие атрибуты берутся только у Куратора и при смене куратора должны обновиться)
   // - CustomerRequirement, если атрибут уникален для каждой организации...
   id: "Идентификатор Закупки ПГ в старой базе",
-  purchase_code: "Идентификационный код закупки" +
-    "string" +
-    "old - Position.purchase_code " +
-    "old - SpecialPosition.purchase_code" +
-    "new - CustomerRequirement.purchase_code" +
-    "example - 183165531719116550100100030006820244",
   placing_way: "Способ определения поставщика (подрядчика, исполнителя)" +
     "В соответствии со структурой элемента nsiPlacingWay " +
     "old - Position.purchase_type == nsiPlacingWay.name? " +
     "old - для особых - всегда EP44" +
     "new - Purchase.placing_way_id соответствующий nsiPlacingWay.placingWayId ?",
+  purchase_code: "Идентификационный код закупки" +
+    "string" +
+    "old - Position.purchase_code " +
+    "old - SpecialPosition.purchase_code" +
+    "example - 183165531719116550100100030006820244",
   object_info: "Наименование объекта закупки" +
     'только для обычных закупок, поскольку у особых этот атрибут в ПГ отсутствует и редактируется на этапе заявки' +
     "string" +
@@ -30,20 +29,12 @@ export default {
   undefined: "Невозможно определить объём подлежащих выполнению работ по техническому обслуживанию и (или) ремонту техники, оборудования, оказанию услуг связи, общественного питания, переводчика, проведения оценки, перевозки грузов, пассажиров и багажа, юридических, медицинских, образовательных, гостиничных услуг" +
     "bool" +
     "Кроме особых" +
-    "old - Position.impossibly_determination_amount" +
-    "new - CustomerRequirement.undefined" ,
+    "old - Position.impossibly_determination_amount",
 
   joint_bidding_organization: {
     // Организация-Организатор совместной закупки (не путать с Организацией-Куратором совместной закупки)
     // Структура в соответствии с nsiOrganization
   },
-
-  max_price: "Начальная (максимальная) цена контракта" +
-    "money в копейках" +
-    "old - Position.total" +
-    "old - SpecialPosition.total" +
-    "new - CustomerRequirement.max_price" +
-    "example - 23500",
 
   InitialAmount: {
     // Транслируем из Закупки ПГ и не сохраняем
@@ -55,6 +46,13 @@ export default {
     subsecYears: 'SpecialPosition.total_amount_other_years'
   },
 
+  max_price: "Начальная (максимальная) цена контракта" +
+    "money в копейках" +
+    "old - Position.total" +
+    "old - SpecialPosition.total" +
+    "new - CustomerRequirement.max_price" +
+    "example - 23500",
+
   InitialAmountMethods: {
     // для особой храним в таблице initial_amount_methods. Связь CustomerRequirement has_many: InitialAmountMethods
     // для обычных транслируем из Закупки ПГ
@@ -65,6 +63,7 @@ export default {
     inability_foundation: 'iam.initial_amount_method_inability_foundation',
     justification: 'iam.initial_amount_method_justification',
   },
+
 
   preferences: [],
 }
