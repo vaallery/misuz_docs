@@ -1,0 +1,133 @@
+/*
+    Все данные указаны вкаческве примера и берутся из моделей Orgnization и Employee
+
+*/
+
+{
+    "id": 1,
+    "name": "МКУ \"Управление образования города Казани\"",
+    "employees": [
+    {
+        "id": 22,
+        "types": [
+            "MainEmployeeDirectory",
+            "SignatoryEmployeeDirectory"
+        ],
+        "data": {
+            "position": "Hачальник",
+            "email": "guo-kzn@yandex.ru",
+            "phone": "+7(843)292-70-50",
+            "person": {
+                "first_name": "Ильсур",
+                "last_name": "Хадиуллин",
+                "middle_name": "Гараевич"
+            }
+        }
+    },
+
+],
+    "info": {
+    "id": 84752,
+        "fax": "7-843-2923473",
+        "inn": "1655065593",
+        "kpp": "165501001",
+        "url": "http://kzn.ru",
+        "ogrn": "1061655000098",
+        "okpo": "93070476",
+        "email": "uokazan@rambler.ru",
+        "okogu": {
+        "code": "3300200",
+            "name": "Местные администрации (исполнительно-распорядительные органы) городских округов"
+    },
+    "okopf": {
+        "code": "75404",
+            "full_name": "Муниципальные казенные учреждения"
+    },
+    "oktmo": {
+        "code": "92701000001"
+    },
+    "okved": "84.11.3",
+        "phone": "7-843-2923473",
+        "title": "МКУ \"Управление образования города Казани\"",
+        "actual": "true",
+        "budgets": {
+        "budget": {
+            "code": "11031096",
+                "name": "бюджет муниципального образования города Казани"
+        }
+    },
+    "accounts": {
+        "account": {
+            "bik": "049205001",
+                "bank_name": "ОТДЕЛЕНИЕ-НБ РЕСПУБЛИКИ ТАТАРСТАН Г.КАЗАНЬ",
+                "bank_address": "420111,РТ,г.Казань,ул.Баумана дом 37",
+                "corr_account": null,
+                "payment_account": "40204810800000000002",
+                "personal_account": "ЛБ718210327-УпрОбр"
+        }
+    },
+    "district": "",
+        "grbs_inn": "",
+        "iku_info": {
+        "iku": "31655065593165501001",
+            "date_st_iku": "2015-01-01T00:00:00"
+    },
+    "oktmoppo": {
+        "code": "92701000",
+            "name": "город Казань"
+    },
+    "register": "true",
+        "full_name": "МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ \"УПРАВЛЕНИЕ ОБРАЗОВАНИЯ ИСПОЛНИТЕЛЬНОГО КОМИТЕТА МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА КАЗАНИ\"",
+        "grbs_code": "821",
+        "grbs_type": "grbs",
+        "time_zone": "0",
+        "reg_number": "01113000024",
+        "short_name": "МКУ \"УПРАВЛЕНИЕ ОБРАЗОВАНИЯ ГОРОДА КАЗАНИ\"",
+        "head_agency": {
+        "reg_num": "01113000001",
+            "full_name": "МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ \"ФИНАНСОВОЕ УПРАВЛЕНИЕ ИСПОЛНИТЕЛЬНОГО КОМИТЕТА МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА КАЗАНИ\""
+    },
+    "contact_person": {
+        "last_name": "Гумирова",
+            "first_name": "Гульнара",
+            "middle_name": "Раисовна"
+    },
+    "postal_address": "Российская Федерация, 420011, Татарстан Респ, Казань г, УЛ БОЛЬШАЯ КРАСНАЯ, 1",
+        "factual_address": {
+        "zip": "420011",
+            "city": {
+            "full_name": "Казань г",
+                "kladr_code": "16000001000",
+                "kladr_type": "C"
+        },
+        "region": {
+            "full_name": "Татарстан Респ",
+                "kladr_code": "16000000000",
+                "kladr_type": "R"
+        },
+        "country": {
+            "country_code": "643",
+                "country_full_name": "Российская Федерация"
+        },
+        "building": "1",
+            "short_street": "УЛ БОЛЬШАЯ КРАСНАЯ",
+            "filled_manually": "true"
+    },
+    "ordering_agency": {
+        "reg_num": "01113000001",
+            "full_name": "МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ \"ФИНАНСОВОЕ УПРАВЛЕНИЕ ИСПОЛНИТЕЛЬНОГО КОМИТЕТА МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОДА КАЗАНИ\""
+    },
+    "time_zone_olson": "Europe/Moscow",
+        "cons_registry_num": "92303434",
+        "organization_role": [
+        "CU"
+    ],
+        "organization_type": {
+        "code": "01",
+            "name": "орган гос.власти"
+    },
+    "registration_date": "2006-01-13",
+        "subordination_type": "3",
+        "time_zone_utc_offset": "UTC+03:00"
+}
+}
