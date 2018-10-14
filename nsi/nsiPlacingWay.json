@@ -1,0 +1,1424 @@
+[
+  {
+    "placingWayId": "3",
+    "code": "OK",
+    "name": "Открытый конкурс",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "4",
+    "code": "OA",
+    "name": "Открытый аукцион",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "5",
+    "code": "ZK",
+    "name": "Запрос котировок",
+    "type": "ZK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6",
+    "code": "PO",
+    "name": "Предварительный отбор",
+    "type": "PO",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "7",
+    "code": "SZ",
+    "name": "Сообщение о заинтересованности в проведении открытого конкурса",
+    "type": "SZ",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "9",
+    "code": "OKB",
+    "name": "Тестовый подспособ",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "10",
+    "code": "OKF",
+    "name": "Открытый конкурс (финансирование проката или показа национального фильма)",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "11",
+    "code": "EF",
+    "name": "Открытый аукцион в электронной форме",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "12",
+    "code": "ZKI",
+    "name": "Размещение заказа путем запроса котировок цен товаров, работ, услуг, соответственно производство, выполнение, оказание которых осуществляется не по конкретным заявкам заказчика и для которых есть функционирующий рынок, для обеспечения своей деятельности на территории иностранного государства, на которой находится заказчик, у иностранных поставщиков (исполнителей, подрядчиков) (ч. 5 ст. 42 Федерального закона №94-ФЗ)",
+    "type": "ZK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "13",
+    "code": "ZKM",
+    "name": "Размещение заказа путем проведения запроса котировок на поставку продовольствия, средств, необходимых для оказания скорой или неотложной медицинской помощи, лекарственных средств, топлива, которые необходимы для нормального жизнеобеспечения граждан и отсутствие которых приведет к нарушению их нормального жизнеобеспечения в случаях, указанных в ч. 6 ст. 42 Федерального закона №94-ФЗ",
+    "type": "ZK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "14",
+    "code": "OKN",
+    "name": "Открытый конкурс (научно-исследовательская, опытно-конструкторская или технологическая работа)",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "15",
+    "code": "NOU",
+    "name": "Нет особых условий",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "16",
+    "code": "POA",
+    "name": "Повторный открытый аукцион на поставку лекарственных средств для федеральных нужд (ч.3 ст.40 Федерального закона №94-Ф3)",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "18090",
+    "code": "zs",
+    "name": "Новый подспособ. редакция",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "18091",
+    "code": "sd",
+    "name": "Еще один подспособ",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "18234",
+    "code": "sfd",
+    "name": "Новый подспособ",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "18448",
+    "code": "OKL",
+    "name": "Открытый конкурс (создание произведения литературы или искусства, исполнения)",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "48949",
+    "code": "A1",
+    "name": "Тест наименование",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "48956",
+    "code": "1",
+    "name": "1",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "48957",
+    "code": "2",
+    "name": "2",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "49532",
+    "code": "165",
+    "name": "tyetewhvghvw",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "49533",
+    "code": "2",
+    "name": "2",
+    "type": "ZH",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "49534",
+    "code": "2",
+    "name": "rerereere",
+    "type": "ZH",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "49662",
+    "code": "209",
+    "name": "ff",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "49665",
+    "code": "205",
+    "name": "одинаковый код",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "50832",
+    "code": "22",
+    "name": "2",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "50833",
+    "code": "222",
+    "name": "4444",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "53030",
+    "code": "НН",
+    "name": "ааа",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "55487",
+    "code": "3FG",
+    "name": "Новый добавленный подспособ - edit name 2",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "55490",
+    "code": "3JZ",
+    "name": "Подспособ для теста НСИ - отредактировал",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "55491",
+    "code": "4ЫВ",
+    "name": "Очередной новый подспособ для НСИ",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "55669",
+    "code": "TR",
+    "name": "trtr",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "55793",
+    "code": "23",
+    "name": "Новый подспособ для ОК",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "57943",
+    "code": "О5",
+    "name": "тест 1",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "59836",
+    "code": "211",
+    "name": "22",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "63818",
+    "code": "42",
+    "name": "Новый подспособ на ДВ",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "201741",
+    "code": "ZH",
+    "name": "Результат рассмотрения и оценки котировочных заявок (Глава 5 Федерального закона №94-Ф3)",
+    "type": "ZH",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6266564",
+    "code": "ZKS",
+    "name": "Заказ на выполнение проектных, изыскательских работ, работ по строительству, реконструкции, капитальному ремонту объектов капитального строительства, относящихся в соответствии с Федеральным законом от 1 декабря 2007 года № 310-ФЗ к олимпийским объектам федерального значения, олимпийским объектам краевого значения или олимпийским объектам муниципального значения (ч.34 ст.65 Федерального закона №94-ФЗ), размещаемый путем проведения запроса котировок",
+    "type": "ZK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6324832",
+    "code": "JF",
+    "name": "Тестовый подспособ",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6324833",
+    "code": "POO",
+    "name": "Тестовый подспособ для ПО",
+    "type": "PO",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6324844",
+    "code": "23С",
+    "name": "Новый",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6325026",
+    "code": "OKE",
+    "name": "Открытый конкурс на размещение заказа на энергосервис для нужд заказчиков (гл. 7.1 Федерального закона №94-ФЗ)",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6325027",
+    "code": "OAE",
+    "name": "Открытый аукцион на размещение заказа на энергосервис для нужд заказчиков (гл. 7.1 Федерального закона №94-ФЗ)",
+    "type": "OA",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6325028",
+    "code": "ESZ",
+    "name": "Открытый аукцион в электронной форме на размещение заказа на энергосервис для нужд заказчиков (гл. 7.1 Федерального закона №94-ФЗ)",
+    "type": "EF",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6325029",
+    "code": "ZKE",
+    "name": "Размещение заказа путем запроса котировок на энергосервис для нужд заказчиков (гл. 7.1 Федерального закона №94-ФЗ)",
+    "type": "ZK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "6325033",
+    "code": "ES",
+    "name": "Единственный поставщик",
+    "type": "ES",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "7542847",
+    "code": "TB",
+    "name": "Торги на товарных биржах",
+    "type": "TB",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8301974",
+    "code": "OKS",
+    "name": "Открытый конкурс (размещение заказа на поставку технических средств реабилитации инвалидов, оказание услуг в сфере образования, услуг по санаторно-курортному лечению)",
+    "type": "OK",
+    "subsystemType": "FZ94",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360974",
+    "code": "OK44",
+    "name": "Открытый конкурс",
+    "type": "OK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "110111",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360975",
+    "code": "OKU44",
+    "name": "Конкурс с ограниченным участием",
+    "type": "OKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "110211",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360976",
+    "code": "OKD44",
+    "name": "Двухэтапный конкурс",
+    "type": "OKD44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "110311",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360977",
+    "code": "EA44",
+    "name": "Электронный аукцион",
+    "type": "EA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "120111",
+        "name": "Протокол подведения итогов электронного аукциона; Протокол рассмотрения единственной заявки на участие в электронном аукционе; Протокол рассмотрения заявки единственного участника электронного аукциона",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360978",
+    "code": "ZK44",
+    "name": "Запрос котировок",
+    "type": "ZK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "130111",
+        "name": "Протокол рассмотрения и оценки заявок на участие в запросе котировок",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360979",
+    "code": "ZKB44",
+    "name": "Запрос котировок без размещения извещения",
+    "type": "ZKB44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360980",
+    "code": "PO44",
+    "name": "Предварительный отбор",
+    "type": "PO44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360981",
+    "code": "ZP44",
+    "name": "Запрос предложений",
+    "type": "ZP44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "compDocuments": {
+      "document": {
+        "code": "140111",
+        "name": "Итоговый протокол; Протокол проведения запроса предложений",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360982",
+    "code": "ZKK44",
+    "name": "Закрытый конкурс",
+    "type": "ZKK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110423",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "compDocuments": {
+      "document": {
+        "code": "110421",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360983",
+    "code": "ZKKU44",
+    "name": "Закрытый конкурс с ограниченным участием",
+    "type": "ZKKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110523",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "compDocuments": {
+      "document": {
+        "code": "110521",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360984",
+    "code": "ZKKD44",
+    "name": "Закрытый двухэтапный конкурс",
+    "type": "ZKKD44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110623",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "compDocuments": {
+      "document": {
+        "code": "110621",
+        "name": "Протокол рассмотрения и оценки заявок на участие в конкурсе; Протокол рассмотрения единственной заявки на участие в конкурсе",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360985",
+    "code": "ZA44",
+    "name": "Закрытый аукцион",
+    "type": "ZA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "120223",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "compDocuments": {
+      "document": {
+        "code": "120221",
+        "name": "Протокол закрытого аукциона",
+        "actual": "true"
+      }
+    },
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360986",
+    "code": "EP44",
+    "name": "Закупка у единственного поставщика (подрядчика, исполнителя)",
+    "type": "EP44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "false"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360987",
+    "code": "IS44",
+    "name": "Иной однолотовый способ",
+    "type": "IS44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8360988",
+    "code": "ISM44",
+    "name": "Иной многолотовый способ",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361026",
+    "code": "PK44",
+    "name": "Повторный конкурс",
+    "type": "OK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361027",
+    "code": "POKU44",
+    "name": "Повторный конкурс с ограниченным участием",
+    "type": "OKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361028",
+    "code": "POKD44",
+    "name": "Повторный конкурс",
+    "type": "OKD44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361029",
+    "code": "ZKOP44",
+    "name": "Запрос котировок для оказания скорой, в том числе скорой специализированной, медицинской помощи в экстренной или неотложной форме и нормального жизнеобеспечения граждан (в соответствии со Статьей 76 Федерального закона № 44-ФЗ)",
+    "type": "ZK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361030",
+    "code": "ZKBIG44",
+    "name": "Запрос котировок для обеспечения деятельности заказчика на территории иностранного государства (в соответствии со Статьей 75 Федерального закона № 44-ФЗ)",
+    "type": "ZKB44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361031",
+    "code": "ZKBGP44",
+    "name": "Запрос котировок в целях оказания гуманитарной помощи либо ликвидации последствий чрезвычайной ситуации природного или техногенного характера (в соответствии со Статьей 82 Федерального закона № 44-ФЗ)",
+    "type": "ZKB44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361238",
+    "code": "ZKK44I",
+    "name": "Закрытый конкурс (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361239",
+    "code": "ZKKU44I",
+    "name": "Закрытый конкурс с ограниченным участием (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361240",
+    "code": "ZKKD44I",
+    "name": "Закрытый двухэтапный конкурс (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361241",
+    "code": "ZA44I",
+    "name": "Закрытый аукцион (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361242",
+    "code": "OKD44I",
+    "name": "Двухэтапный конкурс (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361243",
+    "code": "OKU44I",
+    "name": "Конкурс с ограниченным участием (универсальный способ)",
+    "type": "ISM44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8361244",
+    "code": "ZKB44I",
+    "name": "Запрос котировок без размещения извещения (универсальный способ)",
+    "type": "IS44",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8403974",
+    "code": "ZKOO44",
+    "name": "Запрос котировок на выполнение работ по строительству, реконструкции, капитальному ремонту, а также проектных, изыскательских работ в отношении олимпийских объектов и строительству домов взамен земельных участков и объектов недвижимого имущества, изымаемых в целях размещения олимпийских объектов (часть 15 статьи 112 Федерального закона №44-ФЗ)",
+    "type": "ZK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8444974",
+    "code": "EOK44",
+    "name": "Конкурс для заключения энергосервисного контракта",
+    "type": "OK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8444975",
+    "code": "EOKU44",
+    "name": "Конкурс для заключения энергосервисного контракта",
+    "type": "OKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8444976",
+    "code": "EOKD44",
+    "name": "Конкурс для заключения энергосервисного контракта",
+    "type": "OKD44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8444977",
+    "code": "EEA44",
+    "name": "Электронный аукцион для заключения энергосервисного контракта",
+    "type": "EA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8444978",
+    "code": "ZKE44",
+    "name": "Запрос котировок для заключения энергосервисного контракта",
+    "type": "ZK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8448074",
+    "code": "OKA44",
+    "name": "Открытый конкурс для заключения договора на проведение аудита бухгалтерской (финансовой) отчетности (согласно ч. 4 ст. 5 Федерального закона от 30.12.2008г. № 307-ФЗ)",
+    "type": "OK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697656",
+    "code": "OKP44",
+    "name": "Открытый конкурс",
+    "type": "OK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697657",
+    "code": "OKUP44",
+    "name": "Конкурс с ограниченным участием",
+    "type": "OKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697658",
+    "code": "OKDP44",
+    "name": "Двухэтапный конкурс",
+    "type": "OKD44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697659",
+    "code": "EAP44",
+    "name": "Электронный аукцион",
+    "type": "EA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697660",
+    "code": "ZKP44",
+    "name": "Запрос котировок",
+    "type": "ZK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697661",
+    "code": "POP44",
+    "name": "Предварительный отбор",
+    "type": "PO44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697662",
+    "code": "ZPP44",
+    "name": "Запрос предложений",
+    "type": "ZP44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697663",
+    "code": "ZKKP44",
+    "name": "Закрытый конкурс",
+    "type": "ZKK44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110423",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697664",
+    "code": "ZKKUP44",
+    "name": "Закрытый конкурс с ограниченным участием",
+    "type": "ZKKU44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110523",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697665",
+    "code": "ZKKDP44",
+    "name": "Закрытый двухэтапный конкурс",
+    "type": "ZKKD44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "110623",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697666",
+    "code": "ZAP44",
+    "name": "Закрытый аукцион",
+    "type": "ZA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "documents": {
+      "document": {
+        "code": "120223",
+        "name": "Решение федерального органа исполнительной власти, уполномоченного Правительством Российской Федерации на осуществление согласования закрытых способов определения поставщиков (подрядчиков, исполнителей)",
+        "actual": "true"
+      }
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8697667",
+    "code": "EPP44",
+    "name": "Закупка у единственного поставщика (подрядчика, исполнителя)",
+    "type": "EP44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895196",
+    "code": "INM111",
+    "name": "Способ определения поставщика (подрядчика, исполнителя), установленный Правительством Российской Федерации в соответствии со ст. 111 Федерального закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895197",
+    "code": "INMP111",
+    "name": "Способ определения поставщика (подрядчика, исполнителя), установленный Правительством Российской Федерации в соответствии со ст. 111 Федерального закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895198",
+    "code": "OK111",
+    "name": "Открытый конкурс с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895199",
+    "code": "OKU111",
+    "name": "Конкурс с ограниченным участием с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895200",
+    "code": "OKD111",
+    "name": "Двухэтапный конкурс с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895201",
+    "code": "ZKK111",
+    "name": "Закрытый конкурс с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895202",
+    "code": "ZKKU111",
+    "name": "Закрытый конкурс с ограниченным участием с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895203",
+    "code": "ZKKD111",
+    "name": "Закрытый двухэтапный конкурс с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895204",
+    "code": "ZA111",
+    "name": "Закрытый аукцион с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895205",
+    "code": "ZK111",
+    "name": "Запрос котировок с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895206",
+    "code": "ZKB111",
+    "name": "Запрос котировок без размещения извещения с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895207",
+    "code": "ZP111",
+    "name": "Запрос предложений с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895208",
+    "code": "PO111",
+    "name": "Предварительный отбор с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8895209",
+    "code": "EP111",
+    "name": "Закупка у единственного поставщика (подрядчика, исполнителя) с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "8913067",
+    "code": "EA111",
+    "name": "Электронный аукцион с учетом положений ст. 111 Закона № 44-ФЗ",
+    "type": "INM111",
+    "subsystemType": "FZ44",
+    "actual": "false",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "21959392",
+    "code": "PO615",
+    "name": "Предварительный отбор квалифицированных подрядных организаций",
+    "type": "PO615",
+    "subsystemType": "PP615",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "21959393",
+    "code": "POP615",
+    "name": "Предварительный отбор квалифицированных подрядных организаций",
+    "type": "PO615",
+    "subsystemType": "PP615",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "21959394",
+    "code": "EA615",
+    "name": "Электронный аукцион на оказание услуг или выполнение работ по капитальному ремонту общего имущества в многоквартирном доме",
+    "type": "EA615",
+    "subsystemType": "PP615",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "21959395",
+    "code": "EAP615",
+    "name": "Электронный аукцион на оказание услуг или выполнение работ по капитальному ремонту общего имущества в многоквартирном доме",
+    "type": "EA615",
+    "subsystemType": "PP615",
+    "actual": "true",
+    "isProcedure": "false"
+  },
+  {
+    "placingWayId": "23269394",
+    "code": "OK504",
+    "name": "Открытый конкурс в электронной форме",
+    "type": "OK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269395",
+    "code": "OKP504",
+    "name": "Открытый конкурс в электронной форме",
+    "type": "OK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269396",
+    "code": "EOK504",
+    "name": "Открытый конкурс в электронной форме для заключения энергосервисного контракта",
+    "type": "OK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269397",
+    "code": "OKK504",
+    "name": "Открытый конкурс в электронной форме для заключения контракта в сфере науки, культуры или искусства",
+    "type": "OK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269398",
+    "code": "OKA504",
+    "name": "Открытый конкурс в электронной форме для заключения договора на проведение аудита бухгалтерской (финансовой) отчетности (согласно ч. 4 ст. 5 Федерального закона от 30.12.2008г. № 307-ФЗ)",
+    "type": "OK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269499",
+    "code": "OKU504",
+    "name": "Конкурс с ограниченным участием в электронной форме",
+    "type": "OKU504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269500",
+    "code": "OKUP504",
+    "name": "Конкурс с ограниченным участием в электронной форме",
+    "type": "OKU504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269501",
+    "code": "EOKU504",
+    "name": "Конкурс с ограниченным участием для заключения энергосервисного контракта",
+    "type": "OKU504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269502",
+    "code": "OKUK504",
+    "name": "Конкурс с ограниченным участием для заключения контракта в сфере науки, культуры или искусства",
+    "type": "OKU504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269503",
+    "code": "OKD504",
+    "name": "Двухэтапный конкурс в электронной форме",
+    "type": "OKD504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "true",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269504",
+    "code": "OKDP504",
+    "name": "Двухэтапный конкурс в электронной форме",
+    "type": "OKD504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269505",
+    "code": "EOKD504",
+    "name": "Двухэтапный конкурс для заключения энергосервисного контракта",
+    "type": "OKD504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269506",
+    "code": "OKDK504",
+    "name": "Двухэтапный конкурс для заключения контракта в сфере науки, культуры или искусства",
+    "type": "OKD504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269507",
+    "code": "ZK504",
+    "name": "Запрос котировок в электронной форме",
+    "type": "ZK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269508",
+    "code": "ZKP504",
+    "name": "Запрос котировок в электронной форме",
+    "type": "ZK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269509",
+    "code": "EZK504",
+    "name": "Запрос котировок в электронной форме для заключения энергосервисного контракта",
+    "type": "ZK504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269510",
+    "code": "ZP504",
+    "name": "Запрос предложений в электронной форме",
+    "type": "ZP504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "usedInRPGInfo": {
+      "usedInRPG": "true",
+      "RPGJoint": "false",
+      "RPGNot111": "true"
+    },
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269511",
+    "code": "ZPP504",
+    "name": "Запрос предложений в электронной форме",
+    "type": "ZP504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23269512",
+    "code": "EZP504",
+    "name": "Запрос предложений в электронной форме для заключения энергосервисного контракта",
+    "type": "ZP504",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "true"
+  },
+  {
+    "placingWayId": "23270056",
+    "code": "EAO44",
+    "name": "Электронный аукцион для торгов по обращению с твердыми коммунальными отходами",
+    "type": "EA44",
+    "subsystemType": "FZ44",
+    "actual": "true",
+    "isProcedure": "false"
+  }
+]

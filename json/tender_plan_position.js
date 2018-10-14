@@ -64,6 +64,20 @@ export default {
     justification: 'iam.initial_amount_method_justification',
   },
 
+  purchase_kind: "Тип закупки" +
+    "string" +
+    "Только для обычных закупок ПГ" +
+    "У особых задается отдельно для каждого product" +
+    "old - Position.purchase_kind",
+
+  products: [
+    // для обычной закупки -  массив товаров из Position.lot.data[:lot]
+    // для овобой закупки не заполняется
+  ],
+
+  periodicity: "Периодичность поставки товаров, выполнения работ, оказания услуг" +
+    "string" +
+    "для не особых",
 
   preferences: [],
 }
