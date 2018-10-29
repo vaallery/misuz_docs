@@ -1,5 +1,24 @@
 export default {
   id: 'Идентификатор закупки',
+  is_special: "Особая закупка" +
+    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveDocument - Особая" +
+    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveSpendingDocument - вложенная" +
+    "bool" +
+    "new - Purchase.is_special" +
+    "У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44",
+  it_purchase: "Закупка в области информационных и телекоммуникационных технологий" +
+    "bool" +
+    "Для обычной закупки берем у заказчика из Закупки ПГ только в первый раз и далее атрибут редактироуется только в заявке" +
+    "Для особой значение по умолчанию - false" +
+    "old - Position.it_purchase" +
+    "new - Purchase.it_purchase",
+  object_info: "Наименование объекта закупки" +
+    "для совместных сохраняется после согласования заявки" +
+    'только для обычных закупок не редактируемое поле' +
+    "string" +
+    "old - Position.document_kind[:code]" +
+    "new - Purchase.object_info",
+
   tenderPlanPosition: {
     // Транслируем атрибуты Закупки ПГ из старой базы, куратора совместной закупки
     // Если закупка несовместная, то секцию не заполняем
@@ -8,12 +27,6 @@ export default {
   placing_way: "Способ определения поставщика (подрядчика, исполнителя)" +
     "для совместных сохраняется после согласования заявки",
 
-  is_special: "Особая закупка" +
-    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveDocument - Особая" +
-    "Document.type == Order44PurchaseFromSingleSupplierNoncompetitiveSpendingDocument - вложенная" +
-    "bool" +
-    "new - Purchase.is_special" +
-    "У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44",
   contract_single_customer_reason: {
     // У совместных не бывает и заполняется только если nsiPlacingWay.code == EP44 и is_special == false
     // Основание заключения контракта с единственным поставщиком (подрядчиком, исполнителем)
@@ -26,19 +39,7 @@ export default {
     "old - SpecialPurchase.document_kind[:code]" +
     "new - Purchase.special_purchase_type_id",
 
-  object_info: "Наименование объекта закупки" +
-    "для совместных сохраняется после согласования заявки" +
-    'только для обычных закупок не редактируемое поле' +
-    "string" +
-    "old - Position.document_kind[:code]" +
-    "new - Purchase.object_info",
 
-  it_purchase: "Закупка в области информационных и телекоммуникационных технологий" +
-    "bool" +
-    "Для обычной закупки берем у заказчика из Закупки ПГ только в первый раз и далее атрибут редактироуется только в заявке" +
-    "Для особой значение по умолчанию - false" +
-    "old - Position.it_purchase" +
-    "new - Purchase.it_purchase",
 
   is_joint_bidding_purchase: "Совместные торги" +
     "bool" +
@@ -64,11 +65,18 @@ export default {
     // заполняется только для совместных закупок. Объединяются все продукты по всем требованиям заказчика
     // только на просмотр
   ],
-  preferencesAdd: [
-    // по умолчанию - пустой массив
-    // добавление возможно только для обычных закупок
-    // Purchase has_many preferences
+
+  preferences: [
+    //Только для особых.
+    // Храним в таблице preferences
+    // По умолчанию - пустой массив
   ],
+
+  // preferencesAdd: [
+  //   // по умолчанию - пустой массив
+  //   // добавление возможно только для обычных закупок
+  //   // Purchase has_many preferences
+  // ],
 
   preference_TS44530_value: "Объем привлечения. Требование к поставщику (подрядчику, исполнителю), не являющемуся субъектом малого предпринимательства или социально ориентированной некоммерческой организацией, о привлечении к исполнению контракта субподрядчиков, соисполнителей из числа субъектов малого предпринимательства, социально ориентированных некоммерческих организаций (в соответствии с частью 5 статьи 30 Федерального закона № 44-ФЗ)" +
     "",

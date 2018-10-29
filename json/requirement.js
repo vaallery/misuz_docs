@@ -42,6 +42,8 @@ export default {
     // Обеспечение исполнения контракта
     // Переносим из закупки ПГ и храним в таблице guarantees. Доступ к значению через CustomerRequirement.contract_guarantee_id
     // с заполнением значений по умолчанию
+    // Для show Если contract_guarantee_id пустой то секция не заполняется
+    // А при сохранении если секция отсутствует, то гарантию нужно удалить.
     amount: "Обеспечение исполнения контракта" +
       "money" +
       "Position.contract_security.contract_security_rubles",
