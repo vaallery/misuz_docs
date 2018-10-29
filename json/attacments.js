@@ -2,6 +2,8 @@ export default
 [{
   id: 'number',
   kind:	{
+    id: 'number',
+    name: 'string'
     // ref AttachmentKinds
   },
   name:	'text',
