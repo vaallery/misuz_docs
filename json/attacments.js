@@ -1,4 +1,5 @@
-export default {
+export default
+[{
   id: 'number',
   kind:	{
     // ref AttachmentKinds
@@ -16,8 +17,8 @@ export default {
       file: 'string',
       size: '',
       url: 'string',
-      for_delete: true
+      for_delete: true,
       created_at: 'date-time'
     }
   ]
-}
+}]
